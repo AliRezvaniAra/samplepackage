@@ -1,0 +1,32 @@
+{
+  "name": "mypackages/samplepackage",
+  "description": "this is my first package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AliRezvaniAra",
+      "email": "ali.rezvaniara@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Mypackages\\Samplepackage\\": "src"
+    },
+    "classmap": [
+      "src"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Mypackages\\Samplepackage\\Providers\\SamplepackageServiceProvider"
+      ]
+    }
+  }
+}
